@@ -17,14 +17,11 @@ struct inText: View {
             Text(lbl)
                 .padding(.all, 5)
                 .frame(width: 120, height: 40, alignment: .bottomLeading)
-                .background(Color(red: 0.9, green: 0.9, blue: 0.9))
 
             TextField("", text: $txt)
-                .padding(.all, 5)
-                .frame(maxWidth: 1000)
-                .frame(height: 40, alignment: .bottomLeading)
-                .background(Color(red: 0.9, green: 0.9, blue: 0.9))
                 .keyboardType(.numbersAndPunctuation)
+                .padding(.all, 5)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
         }
     }
 }
